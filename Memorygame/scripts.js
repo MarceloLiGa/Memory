@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //recupaerar elementos
   const board = document.querySelector('.board')
   const resultView = document.querySelector('#result')
+  const pag = document.querySelector('.botao')
   let cardsChosen = [] //cartas escolhidas
   let cardsChosenId = [] //ids das cartas escolhidas para caso de click na mesma imagem
   let cardsWon = [] //cartas combinadas
@@ -177,8 +178,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardsWon.length === cards.length / 2) {
       resultView.textContent = 'Parabéns!' + '\n' + 'Você conseguiu encontrar todos os ' + cardsWon.length + ' pares de cartas'
       board.style.display = "none"
+      pag.style.display="flex"
       resultView.style.display = "flex"
-
+      
 
     }
   }

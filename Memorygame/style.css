@@ -33,7 +33,23 @@
     background-position-y: 1000px;
 
 }
-
+.botao{
+    width: 180px;
+    height: 60px;
+    display: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2)
+}
 @media screen and (max-width: 874px) {
     * {
         max-height: 120px;
